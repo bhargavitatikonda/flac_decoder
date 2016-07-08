@@ -1,0 +1,19 @@
+FLAC Decoder Software Library for Linux
+--------------------------
+
+ This software decodes FLAC coded bit stream.
+
+ FLAC is a free, open source standard. The certificates from the licensor do not provide any
+ assurances to users that the product performs reliably, intellectual property rights are protected,
+ disputes are resolved by contract, and specifications are not subject to major changes.
+ The user should use this middleware at his or her own risk.
+
+License:
+--------
+
+ * New BSD License. ( Refer to document )
+
+Dependencies:
+-------------
+
+ * non
