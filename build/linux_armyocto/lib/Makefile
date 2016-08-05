@@ -56,11 +56,11 @@ TOPDIR       = ../../../lib
 DEFINE       = -DRCAR_H3_M3
 
 ifeq ($(PLATFORM),Linaro_GCC_64)
-CFLAGS  = -O2 -pipe -feliminate-unused-debug-types
+#CFLAGS  = -O2 -pipe -feliminate-unused-debug-types
 endif
 
 ifeq ($(PLATFORM),Linaro_GCC_32)
-CFLAGS  = -O2 -pipe -feliminate-unused-debug-types
+#CFLAGS  = -O2 -pipe -feliminate-unused-debug-types
 endif
 
 CFLAGS      += -fPIC
