@@ -1,12 +1,12 @@
 /*------------------------------------------------------------------------------*/
 /* FLAC Decode Software                                                         */
-/* Copyright(C) 2012-2016 Renesas Electronics Corporation.                      */
+/* Copyright(C) 2012-2017 Renesas Electronics Corporation.                      */
 /*------------------------------------------------------------------------------*/
 
 /******************************************************************************
 * File Name    : flacd_api.h
-* $Rev: 1007 $
-* $Date:: 2016-07-07 15:55:30 +0900#$
+* $Rev: 1112 $
+* $Date:: 2017-04-27 13:45:47 +0900#$
 * Description  : Header file for API
 ******************************************************************************/
 #ifndef FLACD_API_H
@@ -18,7 +18,7 @@
 #include "flacd_Lib.h"
 
 #define FLACD_CUSTOMERID			((ACMW_UINT32)0x00000000U)
-#define FLACD_RELEASEID				((ACMW_UINT32)0x000000B1U)
+#define FLACD_RELEASEID				((ACMW_UINT32)0x00000000U)
 #define FLACD_MAJOR					((ACMW_UINT32)0x00000002U)
 #define FLACD_MINOR					((ACMW_UINT32)0x00000000U)
 

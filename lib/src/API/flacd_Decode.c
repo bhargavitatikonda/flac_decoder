@@ -299,7 +299,8 @@ ACMW_INT32 flacd_Decode( const flacd_workMemoryInfo*		const pWorkMemInfo,
 		/* Set Error Factor */
 		if(ret == false) {
 			/* RCG3AFLDL4001ZDO P-00006 start */
-			if ( FLAC__stream_decoder_get_error_state(&(pStaticStructure->pStreamDecoder)) == FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC ) {
+			if ( ( FLAC__stream_decoder_get_error_state(&(pStaticStructure->pStreamDecoder)) == FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC ) &&
+				 ( FLAC__stream_decoder_get_state(&(pStaticStructure->pStreamDecoder)) == FLAC__STREAM_DECODER_SEARCH_FOR_FRAME_SYNC ) ) {
 				pStaticStructure->nErrorFactor = FLACD_ERR_LOST_SYNC;
 			}
 			else {	/* RCG3AFLDL4001ZDO P-00006 end */
